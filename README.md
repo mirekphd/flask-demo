@@ -13,4 +13,4 @@ Example service, deployment and configmapfiles can be found in k8s directory.
 The app itself listens on port 5000.   
 Run the container with e.g. :
 
-    docker run --name flask-demo -p8080:5000 -e NAME='Mark'  flask-demo:0.16
+    docker run --name flask-demo -p 80:5000 -e NAME='Mark' mirekphd/flask-demo
