@@ -10,7 +10,7 @@ RUN mkdir /app
 
 # copy app and templates to the container
 COPY app.py /app
-COPY templates /app
+COPY templates /app/templates/
 
 # ENTRYPOINT ["python"]
 
