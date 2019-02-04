@@ -5,5 +5,5 @@ RUN apk add python3 py-pip && python3 -m ensurepip && pip install --upgrade pip 
 COPY templates /app
 WORKDIR /app
 COPY . /app/
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+# ENTRYPOINT ["python"]
+CMD ["python app.py"]
