@@ -8,16 +8,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    #
+    
     version = 0.17
     hostname = socket.gethostname()
     time = datetime.datetime.now()
     message = 'Goodbye and thanks for all the fish!'
+    
+    name = 'Mark'
     try:
         name = os.environ['NAME']
     except KeyError:
         name = 'Flask-demo'
-    name = 'Mark'
+    
     return render_template('hello.html',
                            message=message,
                            hostname=hostname,
